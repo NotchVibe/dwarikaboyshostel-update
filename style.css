@@ -1,0 +1,364 @@
+/* ------------------- WEB CREDIT -----------
+Design & Developed by - Aditya Kumar Sinha (NotchVibe)
+Date - 24/01/22
+Time - 09:49 PM
+Day - Monday
+/*
+
+/* ------------------- WEBSITE UPDATING STATUS -------------
+Update Status -
+1st Time - Uploading the Website which work better (on nelify).
+2nd Time - Update and make Stable for the Mobile or Small Devices.
+3rd Time - Update [Creating New Website with Bootstrap (not updating previuos one)] {24/01/22, Time : 09:56PM}
+*/
+
+/* ------------------- GOOGLE FONTS LINKING ------------------
+font-family: 'Bree Serif', serif; --> Heading
+font-family: 'Source Serif Pro', serif;  --> Paragraph
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Source+Serif+Pro&display=swap');
+
+
+
+/* XXXXXXXXXXXXXXXXXXX - CONTACT HTML Page Designing - XXXXXXXXXXXXXXXX  */
+section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: pink; */
+    height: 90vh;
+}
+
+section h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration-color: orangered;
+}
+
+/*The Main Contact Box  */
+.contact-box {
+    display: flex;
+    /*For the Desktop Version */
+    flex-direction: row;
+    /* flex-direction: column; -For the Mobile Version or Tablet */
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #0095ff14, rgb(101 177 255 / 21%));
+    border-radius: 1rem;
+    /* For the Desktop Version [Below Height or Width applied.] */
+    height: 40vh;
+    width: 40vw;
+    box-shadow: 2px 2px 4px black;
+    /* For the Mobile or Tablet below will applied. */
+    /* height: 55vh;
+    width: 20vw; */
+}
+
+/* The Container contains the Profile, H4 and p. */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.contact-info img {
+    width: 10vw;
+    padding: 1rem;
+    background-color: #006bff14;
+    border-radius: 5rem;
+}
+
+.contact-info h4, .contact-info p {
+    font-family: 'Bree Serif', serif;
+}
+
+/* The Bottom Container-containing Action Buttons [ Call, WhatsApp, Email, Get Direction] */
+.contact-action {
+    width: 100%;
+    height: 9vh;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.call, .email, .map {
+    height: 7vh;
+    background-color: rgb(0 213 255 / 15%);
+    border-radius: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.chat {
+    height: 7vh;
+    background-color: rgb(0 213 255 / 15%);
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1.2rem;
+}
+
+.call:hover, .chat:hover, .email:hover, .map:hover {
+    height: 7.3vh;
+    background-color: rgb(0 213 255 / 25%);
+}
+
+/* XXXXXXXXXXXXX --- CONTACT HTML Page Ends --- XXXXXXXXXXXXX */
+
+.navbar-brand img {
+    height: 6vh;
+}
+
+.navbar-toggler {
+    font-size: 2rem;
+}
+
+.navbar-toggler-icon {
+    width: 0.6em;
+    height: 1em;
+}
+
+.navbar-dark .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+}
+
+.navbar-light .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+}
+
+.faqs-home {
+    margin-top: 8rem;
+}
+
+
+/* DEFAULT DESIGN SETUP end*/
+
+/* Home --> */
+.home {
+    background: url(img/Graphics/Graphical_Background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: royalblue; */
+    width: 40%;
+    height: 100%;
+}
+
+.home-text h1 {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 4rem;
+    width: 32vw;
+    color: white;
+    background: linear-gradient(to right, orange, red);
+}
+
+.home-text h6 {
+
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1rem;
+}
+
+.home-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: purple; */
+    width: 60%;
+    height: 100%;
+}
+
+.home-display img {
+    height: 70vh;
+}
+
+.button-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+    width: 30vw;
+    /* background: red; */
+}
+
+.home-button {
+    background: linear-gradient(to left, #0d003a, rgb(0, 1, 68));
+    color: white;
+    width: 10vw;
+    height: 6vh;
+    border-radius: 5rem;
+    outline: none;
+    border: 0px;
+    margin-right: 1rem;
+    font-family: 'Source Serif Pro', serif;
+    transition: all 0.5s;
+}
+
+.home-button:hover {
+    background: linear-gradient(rgb(235, 235, 235), rgb(255, 243, 243));
+    color: black;
+    border: 1px solid black;
+}
+
+/* Home --| */
+
+
+/* Facility ---> */
+.facility {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    /* background-color: khaki; */
+}
+
+.facility h2 {
+    font-family: 'Bree Serif', serif;
+}
+
+.facility-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.facility-box {
+    flex-direction: column;
+    text-align: center;
+    background-color: #e5e5e587;
+    color: black;
+    height: 32vh;
+    width: 28vw;
+    padding: 2rem;
+    margin: 0 1rem;
+    border-radius: 15px;
+}
+
+.facility-box h6 {
+    font-family: 'Bree Serif', serif;
+    text-transform: uppercase;
+}
+
+.facility-box p {
+    font-family: 'Source Serif Pro', serif;
+}
+
+
+
+.facility-box img {
+    height: 8vh;
+    margin-bottom: 0.5rem;
+}
+
+/* Facility ---| */
+
+
+/* Chooose ---> */
+.special-facility {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    background-color: khaki;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.4rem;
+}
+
+.sf-box {
+    background-color: #e5e5e587;
+    color: black;
+    height: 32vh;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 15px;
+
+}
+
+.sf-box img {
+    height: 8vh;
+}
+
+.sf-box h6 {
+    font-family: 'Bree Serif', serif;
+    text-transform: uppercase;
+    margin: 0.2rem;
+}
+
+.sf-box p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1rem;
+    margin: 2rem;
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.test-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40vw;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(182, 182, 182)
+}
+
+.test-profile h6 {
+    text-transform: uppercase;
+    margin: 0.2rem;
+}
+
+.test-profile p {
+    font-size: 0.8rem;
+}
+
+.test-profile img {
+    height: 12vh;
+    margin: 0.1rem;
+}
+
+/* Chooose --| */
