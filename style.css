@@ -1,292 +1,159 @@
-/* ------------------- WEB CREDIT -----------
-Design & Developed by - Aditya Kumar Sinha (NotchVibe)
-Date - 24/01/22
-Time - 09:49 PM
-Day - Monday
-/*
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Oswald&family=Solway:wght@400;800&display=swap');
+/* font-family: 'Bree Serif', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Solway', serif; */
 
-/* ------------------- WEBSITE UPDATING STATUS -------------
-Update Status -
-1st Time - Uploading the Website which work better (on nelify).
-2nd Time - Update and make Stable for the Mobile or Small Devices.
-3rd Time - Update [Creating New Website with Bootstrap (not updating previuos one)] {24/01/22, Time : 09:56PM}
-*/
-
-/* ------------------- GOOGLE FONTS LINKING ------------------
-font-family: 'Bree Serif', serif; --> Heading
-font-family: 'Source Serif Pro', serif;  --> Paragraph
-*/
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Source+Serif+Pro&display=swap');
-
-
-
-/* XXXXXXXXXXXXXXXXXXX - CONTACT HTML Page Designing - XXXXXXXXXXXXXXXX  */
-section {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    /* background-color: pink; */
-    height: 90vh;
+* {
+    transition: all 0.2s ease;
 }
 
-section h2 {
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 800;
-    text-decoration: underline;
-    text-decoration-color: orangered;
+.navbar {
+    background: linear-gradient(90deg, rgba(255, 211, 228, 1) 0%, rgba(205, 255, 216, 1) 58%, rgba(148, 185, 255, 1) 100%);
 }
 
-/*The Main Contact Box  */
-.contact-box {
-    display: flex;
-    /*For the Desktop Version */
-    flex-direction: row;
-    /* flex-direction: column; -For the Mobile Version or Tablet */
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(to bottom, #0095ff14, rgb(101 177 255 / 21%));
-    border-radius: 1rem;
-    /* For the Desktop Version [Below Height or Width applied.] */
-    height: 40vh;
-    width: 40vw;
-    box-shadow: 2px 2px 4px black;
-    /* For the Mobile or Tablet below will applied. */
-    /* height: 55vh;
-    width: 20vw; */
+.title-switch {
+    display: none;
 }
 
-/* The Container contains the Profile, H4 and p. */
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* background-color: rebeccapurple; */
-    width: 100%;
-    padding-top: 1rem;
-}
-
-.contact-info img {
-    width: 10vw;
-    padding: 1rem;
-    background-color: #006bff14;
-    border-radius: 5rem;
-}
-
-.contact-info h4, .contact-info p {
+.navbar li a {
     font-family: 'Bree Serif', serif;
 }
 
-/* The Bottom Container-containing Action Buttons [ Call, WhatsApp, Email, Get Direction] */
-.contact-action {
-    width: 100%;
-    height: 9vh;
-    /* background-color: black; */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+/* SCROLL BAR CUSTOM DESIGN */
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-.call, .email, .map {
-    height: 7vh;
-    background-color: rgb(0 213 255 / 15%);
-    border-radius: 2rem;
-    padding: 0.5rem;
-    cursor: pointer;
-    transition: all 0.2s;
+/* Track */
+::-webkit-scrollbar-track {
+    /* background: #f1f1f1; */
+    background-color: black;
+
+
 }
 
-.chat {
-    height: 7vh;
-    background-color: rgb(0 213 255 / 15%);
-    padding: 0.5rem;
-    cursor: pointer;
-    transition: all 0.2s;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1.2rem;
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(0, 0, 0), rgb(185, 0, 0), rgb(0, 0, 0));
+    border-radius: 8rem;
+
 }
 
-.call:hover, .chat:hover, .email:hover, .map:hover {
-    height: 7.3vh;
-    background-color: rgb(0 213 255 / 25%);
-}
-
-/* XXXXXXXXXXXXX --- CONTACT HTML Page Ends --- XXXXXXXXXXXXX */
-
-.navbar-brand img {
-    height: 6vh;
-}
-
-.navbar-toggler {
-    font-size: 2rem;
-}
-
-.navbar-toggler-icon {
-    width: 0.6em;
-    height: 1em;
-}
-
-.navbar-dark .navbar-toggler {
-    color: transparent;
-    border-color: transparent;
-}
-
-.navbar-light .navbar-toggler {
-    color: transparent;
-    border-color: transparent;
-}
-
-.faqs-home {
-    margin-top: 8rem;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(rgb(0, 0, 0), rgb(255, 0, 0), rgb(0, 0, 0));
 }
 
 
-/* DEFAULT DESIGN SETUP end*/
-
-/* Home --> */
-.home {
-    background: url(img/Graphics/Graphical_Background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main {
     height: 92vh;
-    width: 100%;
-    /* background-color: red; */
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 211, 228, 1) 0%, rgba(205, 255, 216, 1) 58%, rgba(148, 185, 255, 1) 100%);
 }
 
-.home-text {
+.main-text {
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* background-color: royalblue; */
-    width: 40%;
-    height: 100%;
 }
 
-.home-text h1 {
-    font-family: 'Bree Serif', serif;
+.main-text h2 {
+    margin: 1rem 0;
+    color: #002f6d;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.main-text p {
+    font-family: 'Solway', serif;
+    color: #002350;
     text-align: center;
-    font-weight: 700;
-    font-style: italic;
-    border-top-left-radius: 5rem;
-    border-bottom-right-radius: 4rem;
-    width: 32vw;
-    color: white;
-    background: linear-gradient(to right, orange, red);
 }
 
-.home-text h6 {
-
-    font-family: 'Source Serif Pro', serif;
-    font-size: 1rem;
+.main-display img {
+    width: 25vw;
 }
 
-.home-display {
+/* Features */
+.feature-box {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    /* background-color: purple; */
-    width: 60%;
-    height: 100%;
+    height: 60vh;
+    background-color: #ebfff7;
+    padding: 1rem;
 }
 
-.home-display img {
-    height: 70vh;
+.feature-box h3 {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
 }
 
-.button-box {
+.feature-display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-display-box {
+    background-color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 2rem;
-    width: 30vw;
-    /* background: red; */
-}
-
-.home-button {
-    background: linear-gradient(to left, #0d003a, rgb(0, 1, 68));
-    color: white;
-    width: 10vw;
-    height: 6vh;
-    border-radius: 5rem;
-    outline: none;
-    border: 0px;
-    margin-right: 1rem;
-    font-family: 'Source Serif Pro', serif;
-    transition: all 0.5s;
-}
-
-.home-button:hover {
-    background: linear-gradient(rgb(235, 235, 235), rgb(255, 243, 243));
-    color: black;
-    border: 1px solid black;
-}
-
-/* Home --| */
-
-
-/* Facility ---> */
-.facility {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 70vh;
-    width: 100%;
-    /* background-color: khaki; */
-}
-
-.facility h2 {
-    font-family: 'Bree Serif', serif;
-}
-
-.facility-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-}
-
-.facility-box {
-    flex-direction: column;
     text-align: center;
-    background-color: #e5e5e587;
-    color: black;
-    height: 32vh;
-    width: 28vw;
-    padding: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    flex-direction: column;
     margin: 0 1rem;
-    border-radius: 15px;
+    width: auto;
+
 }
 
-.facility-box h6 {
-    font-family: 'Bree Serif', serif;
+/* OUR REVIEW */
+.our-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+    background-color: white;
+}
+
+.our-review h3 {
     text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
 }
 
-.facility-box p {
-    font-family: 'Source Serif Pro', serif;
+.our-review-display {
+    display: flex;
+    justify-content: space-between;
 }
 
+.our-review-display-box {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    margin: 0 1rem;
+    width: 25vw;
 
-
-.facility-box img {
-    height: 8vh;
-    margin-bottom: 0.5rem;
 }
 
-/* Facility ---| */
+.our-review-display-box img {
+    width: 3vw;
+    padding: 1rem 0;
+}
 
-
-/* Chooose ---> */
+/* SPECIAL FACILITY */
 .special-facility {
     display: flex;
     flex-direction: column;
@@ -294,71 +161,193 @@ section h2 {
     align-items: center;
     text-align: center;
     height: 60vh;
-    background-color: khaki;
+    background-color: #edf7ff;
     font-family: 'Bree Serif', serif;
-    font-size: 1.4rem;
 }
+
+.sf-box-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    margin-top: 2rem;
+}
+
 
 .sf-box {
-    background-color: #e5e5e587;
+    background-color: white;
+    border: 1px solid goldenrod;
     color: black;
-    height: 32vh;
     padding: 2rem;
-    margin: 1rem;
-    border-radius: 15px;
-
-}
-
-.sf-box img {
-    height: 8vh;
-}
-
-.sf-box h6 {
-    font-family: 'Bree Serif', serif;
-    text-transform: uppercase;
-    margin: 0.2rem;
-}
-
-.sf-box p {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 1rem;
-    margin: 2rem;
-}
-
-
-/* Testimonials Section */
-.testimonials {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-}
-
-.test-profile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 40vw;
-    padding: 1rem;
     border-radius: 1rem;
-    background-color: rgb(182, 182, 182)
 }
 
-.test-profile h6 {
-    text-transform: uppercase;
-    margin: 0.2rem;
+.sf-box-img img {
+    width: 12vw;
 }
 
-.test-profile p {
-    font-size: 0.8rem;
+/* CONTACT */
+.contact {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.test-profile img {
-    height: 12vh;
-    margin: 0.1rem;
+.contact img {
+    height: 100%;
 }
 
-/* Chooose --| */
+/* MEDIA RESPONSIVE TAG */
+@media screen and (max-width: 768px) {
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        width: 1em;
+        height: 1em;
+    }
+
+    .main {
+        height: 100vh;
+        flex-direction: column-reverse;
+    }
+
+    .main-display img {
+        width: 50vw;
+    }
+
+    .feature-box {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .feature-display {
+        flex-direction: column;
+        width: 60vw;
+    }
+
+    .feature-display-box {
+        margin: 2rem 0;
+        height: 30vh;
+    }
+
+    .our-review {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .our-review-display {
+        flex-direction: column;
+    }
+
+    .our-review-display-box {
+        width: auto;
+        background-color: #f9f9f9;
+        margin: 1rem 0;
+    }
+
+    .sf-box-main {
+        flex-direction: column-reverse;
+    }
+}
+
+/* MEDIA SCREEN FOR MOBILE */
+@media screen and (max-width: 425px) {
+
+    .navbar-brand {
+        display: none !important;
+    }
+
+    .title-switch {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        display: block;
+    }
+
+    .feature-display {
+        width: auto;
+    }
+
+    .feature-display-box {
+        width: 80vw;
+        border: 1px solid #bebebe;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main-display img {
+        width: auto;
+    }
+
+    .feature-box {
+        padding: 2rem 1rem;
+    }
+
+    .feature-display {
+        width: auto;
+    }
+
+    .feature-display-box {
+        border: 1px solid #c6c6c6;
+    }
+
+    .contact img {
+        height: 50vh;
+    }
+
+    .our-review-display-box img {
+        width: 10vw;
+    }
+
+    .our-review-display-box {
+        width: auto;
+        background-color: #efefef;
+        border: 1px solid #b1b1b1;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .navbar-brand img {
+        width: 12vw;
+    }
+
+    .feature-box {
+        padding: 4rem 0;
+    }
+
+    .feature-display {
+        width: auto;
+    }
+
+    .feature-display-box {
+        width: 80vw;
+    }
+
+    .main {
+        justify-content: space-evenly;
+    }
+
+    .main-text {
+        text-align: center;
+    }
+
+    .main-display img {
+        width: 50vw;
+    }
+
+    .special-facility {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .sf-box-img img {
+        width: 20vw;
+    }
+
+
+
+}
